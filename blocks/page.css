@@ -1,0 +1,20 @@
+.page {
+  background-color: black;
+  color: white;
+  display: flex;
+  min-height: 100vh;
+  font-family: "Inner", sans-serif;
+  flex-direction: column;
+}
+
+.page__section {
+  max-width: 880px;
+  position: relative;
+  margin: 0 auto;
+}
+
+ul li::marker {
+  color: initial;
+  font-size: initial;
+  font-weight: initial;
+}
