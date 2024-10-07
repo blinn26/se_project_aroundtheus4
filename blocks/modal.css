@@ -6,29 +6,40 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.50);
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
+  padding: 0 19px;
+  display: none;
+}
+
+.modal_opened {
+  display: flex;
 }
 
 .modal__container {
   background-color: white;
   border-radius: 10px;
   margin: auto;
-  position: relative;
   padding: 36px;
+  position: relative;
 }
 
 .modal__close {
   background-image: url(../images/Close\ Icon.svg);
   position: absolute;
-  top: 16px;
-  right: 16px;
-  font-size: 32px;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
   cursor: pointer;
   border: none;
   background-color: transparent;
   outline: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 .modal__heading {
