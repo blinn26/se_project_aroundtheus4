@@ -105,16 +105,19 @@
   <!-- ----------------------------------------------------------------------- -->
   <!--                              MODAL SECTION                              -->
   <!-- ----------------------------------------------------------------------- -->
-  <div class="modal">
+  <div class="modal"
+    id="edit-modal">
     <div class="modal__container">
-      <button class="modal__close"></button>
-      <p class="modal__heading">Edit Profile</p>
+      <button class="modal__close-button"></button>
+      <p class="modal__title">Edit Profile</p>
       <form class="modal__form">
-        <input type="text"
+        <input class="modal__input modal__input-line"
+          type="text"
           name="title">
-        <input type="text"
+        <input class="modal__input modal__input-description"
+          type="text"
           name="description">
-        <button class="modal__button">Save</button>
+        <button class="modal__save-button">Save</button>
       </form>
     </div>
   </div>
