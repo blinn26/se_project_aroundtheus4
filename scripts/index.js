@@ -31,7 +31,23 @@ console.log(initialCards);
 /* -------------------------------------------------------------------------- */
 const profileEditButton = document.querySelector('#profile-edit-button');
 const profileEditModal = document.querySelector('#profile-edit-modal');
+const profileModalCloseButton = profileEditModal.querySelector('.modal__close-button');
+const profileTitle = document.querySelector('.profile__title');
+const profileDescription = document.querySelector('.profile__description');
+const profileTitleInput = document.querySelector('.profile__input-title');
+const profileDescriptionInput = document.querySelector('.profile__input-description');
+
+/* -------------------------------------------------------------------------- */
+/*                                  FUNCTIONS                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                           OPEN AND CLOSE BUTTONS                           */
+/* -------------------------------------------------------------------------- */
 
 profileEditButton.addEventListener('click', () => {
   profileEditModal.classList.add('modal_opened');
+});
+profileModalCloseButton.addEventListener('click', () => {
+  profileEditModal.classList.remove('modal_opened');
 });
