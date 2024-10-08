@@ -78,6 +78,9 @@
   color: #000000;
   padding-left: 36px;
   width: 330px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 
