@@ -34,8 +34,8 @@ const profileEditModal = document.querySelector('#profile-edit-modal');
 const profileModalCloseButton = profileEditModal.querySelector('.modal__close-button');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__description');
-const profileTitleInput = document.querySelector('.profile__input-title');
-const profileDescriptionInput = document.querySelector('.profile__input-description');
+const profileTitleInput = document.querySelector('.profile__title-input');
+const profileDescriptionInput = document.querySelector('.profile__description-input');
 
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
@@ -46,6 +46,8 @@ const profileDescriptionInput = document.querySelector('.profile__input-descript
 /* -------------------------------------------------------------------------- */
 
 profileEditButton.addEventListener('click', () => {
+  profileTitleInput.value = profileTitle.textContent;
+  profileDescriptionInput.value = profileDescription.textContent;
   profileEditModal.classList.add('modal_opened');
 });
 profileModalCloseButton.addEventListener('click', () => {

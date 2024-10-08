@@ -33,7 +33,7 @@
 
 }
 
-.profile__input-title {
+.profile__title-input {
   margin-bottom: 29.74px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding: 13px 0;
@@ -41,7 +41,7 @@
   align-self: center;
 }
 
-.profile__input-description {
+.profile__description-input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding: 13px 0;
   opacity: 1;
