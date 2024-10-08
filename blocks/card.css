@@ -18,7 +18,7 @@
 
 }
 
-.card__description {
+.card__title {
   align-items: center;
   justify-content: space-between;
   text-overflow: ellipsis;
@@ -46,7 +46,7 @@
 
 
 
-.card__footer {
+.card__description {
   padding-left: 20px;
   padding-bottom: 25px;
   display: flex;
