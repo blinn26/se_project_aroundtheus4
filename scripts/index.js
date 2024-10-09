@@ -25,7 +25,6 @@ const initialCards = [
   },
 ];
 
-console.log(initialCards);
 /* -------------------------------------------------------------------------- */
 /*                                  ELEMENTS                                  */
 /* -------------------------------------------------------------------------- */
@@ -37,7 +36,8 @@ const profileDescription = document.querySelector('.profile__description');
 const profileTitleInput = document.querySelector('.profile__title-input');
 const profileDescriptionInput = document.querySelector('.profile__description-input');
 const profileEditForm = profileEditModal.querySelector('.modal__form');
-const cardTemplate = document.querySelector('#card-template').content.firstElementChild;
+const cardListEl = document.querySelector('.cards__list'); // Fixed this selector
+const cardTemplate = document.querySelector('#card-template').content; // Fixed template selection
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
 /* -------------------------------------------------------------------------- */
@@ -67,6 +67,22 @@ profileModalCloseButton.addEventListener('click', closePopUp);
 
 profileEditForm.addEventListener('submit', handleProfileEditSubmit);
 
-// for (let i = 0; i < initialCards.length; i++) {
-//   const card = initialCards[i];
-// }
+/* -------------------------------------------------------------------------- */
+/*                              CARD RENDERING                                */
+/* -------------------------------------------------------------------------- */
+initialCards.forEach((cardData) => {
+  // Clone the template content
+  const cardEl = cardTemplate.cloneNode(true); // Correct way to clone the template
+
+  // Find the elements in the cloned template
+  const imageEl = cardEl.querySelector('.card__image');
+  const titleEl = cardEl.querySelector('.card__title');
+
+  // Set the image and title
+  imageEl.src = cardData.link;
+  imageEl.alt = cardData.name;
+  titleEl.textContent = cardData.name;
+
+  // Append the card to the card list
+  cardListEl.append(cardEl);
+});
