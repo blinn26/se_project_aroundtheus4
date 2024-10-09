@@ -40,7 +40,7 @@
       <!-- ----------------------------------------------------------------------- -->
       <section class="cards page__section">
         <ul class="cards__list">
-
+          <!-- Cards will be rendered here -->
         </ul>
       </section>
     </main>
@@ -54,25 +54,51 @@
   <!-- ----------------------------------------------------------------------- -->
   <!--                              MODAL SECTION                              -->
   <!-- ----------------------------------------------------------------------- -->
+
+  <!-- First Modal (Edit Profile) -->
   <div class="modal"
     id="profile-edit-modal">
     <div class="modal__container">
       <button class="modal__close-button"></button>
       <h3 class="modal__title">Edit profile</h3>
       <form class="modal__form">
-        <input class="modal__input profile__title-input"
+        <!-- Changed input class names -->
+        <input class="modal__input modal__name-input"
           type="text"
           name="name"
           placeholder="Name" />
-        <input class="modal__input profile__description-input"
+        <input class="modal__input modal__description-input"
           type="text"
           name="description"
-          placeholder="Description">
-        <button class="
-          modal__save-button">Save</button>
+          placeholder="Description" />
+        <button class="modal__save-button">Save</button>
       </form>
     </div>
   </div>
+
+  <!-- Second Modal (Add New Card) -->
+  <div class="modal"
+    id="add-card-modal">
+    <div class="modal__container">
+      <button class="modal__close-button"></button>
+      <h3 class="modal__title">New place</h3>
+      <form class="modal__form">
+        <!-- Input for card title -->
+        <input class="modal__input modal__title-input"
+          type="text"
+          name="title"
+          placeholder="Title" />
+        <!-- Input for card URL -->
+        <input class="modal__input modal__url-input"
+          type="text"
+          name="url"
+          placeholder="Image URL" />
+        <button class="modal__save-button">Create</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Card Template -->
   <template id="card-template">
     <li class="card">
       <img src=""
@@ -84,6 +110,7 @@
       </div>
     </li>
   </template>
+
   <script src="/scripts/index.js"></script>
 </body>
 
