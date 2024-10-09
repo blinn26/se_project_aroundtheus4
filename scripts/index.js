@@ -45,6 +45,15 @@ function closePopUp() {
   profileEditModal.classList.remove('modal_opened');
 }
 
+function getCardEl(cardData) {
+  const cardEl = cardTemplate.cloneNode(true);
+  const imageEl = cardEl.querySelector('.card__image');
+  const titleEl = cardEl.querySelector('.card__title');
+  titleEl.textContent = cardData.name;
+  imageEl.src = cardData.link;
+  return cardEl;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                               EVENT HANDLERS                               */
 /* -------------------------------------------------------------------------- */
@@ -69,20 +78,25 @@ profileEditForm.addEventListener('submit', handleProfileEditSubmit);
 
 /* -------------------------------------------------------------------------- */
 /*                              CARD RENDERING                                */
-/* -------------------------------------------------------------------------- */
+// /* -------------------------------------------------------------------------- */
+// initialCards.forEach((cardData) => {
+//   // Clone the template content
+//   const cardEl = cardTemplate.cloneNode(true); // Correct way to clone the template
+
+//   // Find the elements in the cloned template
+//   const imageEl = cardEl.querySelector('.card__image');
+//   const titleEl = cardEl.querySelector('.card__title');
+
+//   // Set the image and title
+//   imageEl.src = cardData.link;
+//   imageEl.alt = cardData.name;
+//   titleEl.textContent = cardData.name;
+
+//   // Append the card to the card list
+//   cardListEl.prepend(cardEl);
+// });
+
 initialCards.forEach((cardData) => {
-  // Clone the template content
-  const cardEl = cardTemplate.cloneNode(true); // Correct way to clone the template
-
-  // Find the elements in the cloned template
-  const imageEl = cardEl.querySelector('.card__image');
-  const titleEl = cardEl.querySelector('.card__title');
-
-  // Set the image and title
-  imageEl.src = cardData.link;
-  imageEl.alt = cardData.name;
-  titleEl.textContent = cardData.name;
-
-  // Append the card to the card list
-  cardListEl.append(cardEl);
+  const cardEl = getCardEl(cardData);
+  cardListEl.prepend(cardEl);
 });
