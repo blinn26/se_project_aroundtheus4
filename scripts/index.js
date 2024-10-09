@@ -1,3 +1,7 @@
+/* -------------------------------------------------------------------------- */
+/*                                    CARDS                                   */
+/* -------------------------------------------------------------------------- */
+
 const initialCards = [
   { name: 'Yosemite Valley', link: './images/yosemite.jpg' },
   { name: 'Lake Louise', link: './images/lake-louise.jpg' },
