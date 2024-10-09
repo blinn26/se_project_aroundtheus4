@@ -3,7 +3,7 @@
   color: white;
   display: flex;
   min-height: 100vh;
-  font-family: "Inner", sans-serif;
+  font-family: "Inter", sans-serif;
   flex-direction: column;
 }
 
@@ -11,6 +11,12 @@
   max-width: 880px;
   position: relative;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1140px) {
+  .page__section {
+    width: calc(100% - 40px);
+  }
 }
 
 ul li::marker {

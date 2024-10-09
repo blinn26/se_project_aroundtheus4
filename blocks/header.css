@@ -1,6 +1,15 @@
 .header {
   margin-top: 45px;
-  margin-left: 200px;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(84, 84, 84, 0.7);
+  max-width: 880px;
+
+}
+
+.header__logo {
+  top: 45px;
+  margin-bottom: 41px;
+  left: 200px;
   height: 33px;
   width: 173px;
   transition: 0.7s;
@@ -8,39 +17,37 @@
 
 }
 
-.header :hover {
+.header__logo:hover {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    margin-left: 27px;
-    margin-right: 167px;
-    margin-top: 28px;
-    height: 24px;
-    width: 126px;
 
-  }
-
-}
 
 
 @media screen and (max-width: 480px) {
   .header {
-    margin-left: 27px;
-    margin-right: 167px;
-    margin-top: 28px;
-    height: 24px;
+    margin-top: 0;
+  }
+
+  .header__logo {
+    padding-left: 27px;
+    padding-right: 19px;
     width: 126px;
+    height: 24px;
+    margin-bottom: 32px;
+    margin-top: 28px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .header {
-    margin-left: 27px;
-    margin-right: 167px;
-    margin-top: 28px;
-    height: 24px;
-    width: 126px;
+    width: 320px;
   }
+
+  .header__logo {
+    margin-top: 28px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
 }
