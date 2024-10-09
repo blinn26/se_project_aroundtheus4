@@ -36,8 +36,8 @@ const profileDescription = document.querySelector('.profile__description');
 const profileTitleInput = document.querySelector('.profile__title-input');
 const profileDescriptionInput = document.querySelector('.profile__description-input');
 const profileEditForm = profileEditModal.querySelector('.modal__form');
-const cardListEl = document.querySelector('.cards__list'); // Fixed this selector
-const cardTemplate = document.querySelector('#card-template').content; // Fixed template selection
+const cardListEl = document.querySelector('.cards__list');
+const cardTemplate = document.querySelector('#card-template').content.firstElementChild;
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
 /* -------------------------------------------------------------------------- */
