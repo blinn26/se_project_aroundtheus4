@@ -3,12 +3,12 @@
 /* -------------------------------------------------------------------------- */
 
 const initialCards = [
-  { name: 'Yosemite Valley', link: './images/yosemite.jpg' },
-  { name: 'Lake Louise', link: './images/lake-louise.jpg' },
-  { name: 'Bald Mountains', link: './images/bald-mountains.jpg' },
-  { name: 'Latemar', link: './images/latemar.jpg' },
-  { name: 'Vanoise National Park', link: './images/vanoise.jpg' },
-  { name: 'Lago di Braies', link: './images/lago.jpg' },
+  { name: 'Yosemite Valley', link: 'https://blinn26.github.io/se_project_aroundtheus4/images/yosemite.jpg' },
+  { name: 'Lake Louise', link: 'https://blinn26.github.io/se_project_aroundtheus4/images/lake-louise.jpg' },
+  { name: 'Bald Mountains', link: 'https://blinn26.github.io/se_project_aroundtheus4/images/bald-mountains.jpg' },
+  { name: 'Latemar', link: 'https://blinn26.github.io/se_project_aroundtheus4/images/latemar.jpg' },
+  { name: 'Vanoise National Park', link: 'https://blinn26.github.io/se_project_aroundtheus4/images/vanoise.jpg' },
+  { name: 'Lago di Braies', link: 'https://blinn26.github.io/se_project_aroundtheus4/images/lago.jpg' },
 ];
 
 /* -------------------------------------------------------------------------- */
