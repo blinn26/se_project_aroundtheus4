@@ -16,16 +16,14 @@
   <div class="page__content">
     <header class="header page__section">
       <img src="./images/aroundus.svg"
-        alt="Around the U.S. "
+        alt="Around the U.S."
         class="header__logo" />
     </header>
     <main class="content">
-      <!-- ----------------------------------------------------------------------- -->
-      <!--                                 PROFILE                                 -->
-      <!-- ----------------------------------------------------------------------- -->
+      <!-- Profile section -->
       <section class="profile page__section">
         <img src="./images/Avatar.svg"
-          alt="jacque"
+          alt="Jacques Cousteau"
           class="profile__image" />
         <div class="profile__info">
           <h1 class="profile__title">Jacques Cousteau</h1>
@@ -35,34 +33,23 @@
         </div>
         <button class="profile__add-button"></button>
       </section>
-      <!-- ----------------------------------------------------------------------- -->
-      <!--                                  CARDS                                  -->
-      <!-- ----------------------------------------------------------------------- -->
+      <!-- Cards section -->
       <section class="cards page__section">
-        <ul class="cards__list">
-          <!-- Cards will be rendered here -->
-        </ul>
+        <ul class="cards__list"></ul>
       </section>
     </main>
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                                 FOOTER                                  -->
-    <!-- ----------------------------------------------------------------------- -->
+    <!-- Footer section -->
     <footer class="footer page__section">
       <p class="footer__title">© 2024 Around The U.S</p>
     </footer>
   </div>
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                              MODAL SECTION                              -->
-  <!-- ----------------------------------------------------------------------- -->
-
-  <!-- First Modal (Edit Profile) -->
+  <!-- Profile Edit Modal -->
   <div class="modal"
     id="profile-edit-modal">
     <div class="modal__container">
       <button class="modal__close-button"></button>
       <h3 class="modal__title">Edit profile</h3>
       <form class="modal__form">
-        <!-- Changed input class names -->
         <input class="modal__input modal__name-input"
           type="text"
           name="name"
@@ -75,20 +62,17 @@
       </form>
     </div>
   </div>
-
-  <!-- Second Modal (Add New Card) -->
+  <!-- Add Card Modal -->
   <div class="modal"
     id="add-card-modal">
     <div class="modal__container">
       <button class="modal__close-button"></button>
       <h3 class="modal__title">New place</h3>
       <form class="modal__form">
-        <!-- Input for card title -->
         <input class="modal__input modal__title-input"
           type="text"
           name="title"
           placeholder="Title" />
-        <!-- Input for card URL -->
         <input class="modal__input modal__url-input"
           type="text"
           name="url"
@@ -97,7 +81,6 @@
       </form>
     </div>
   </div>
-
   <!-- Card Template -->
   <template id="card-template">
     <li class="card">
@@ -110,9 +93,8 @@
       </div>
     </li>
   </template>
-
+  <!-- Script with corrected path -->
   <script src="./scripts/index.js"></script>
-
 </body>
 
 </html>
