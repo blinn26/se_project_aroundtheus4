@@ -46,6 +46,7 @@
   transition: 0.8s;
   border: 2px solid white;
   border-radius: 2px;
+  margin-bottom: 20px;
 }
 
 .profile__add-button:hover {
@@ -69,7 +70,6 @@
   font-weight: 400;
   grid-area: description;
   margin: 0;
-  margin-top: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
