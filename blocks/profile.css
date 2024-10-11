@@ -85,7 +85,9 @@
   grid-area: title;
   margin: 0;
   font-family: "Inter", sans-serif;
-  height: 39px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__description {
