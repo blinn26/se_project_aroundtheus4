@@ -43,6 +43,10 @@ function closePopUp(modal) {
   modal.classList.remove('modal_opened');
 }
 
+function openPopUp(modal) {
+  modal.classList.add('modal_opened');
+}
+
 function getCardEl(cardData) {
   const cardEl = cardTemplate.cloneNode(true);
   const imageEl = cardEl.querySelector('.card__image');
