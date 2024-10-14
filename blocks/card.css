@@ -29,7 +29,7 @@
 }
 
 .card__like-button {
-  background: transparent url(../images/like-button-inactive.svg) center no-repeat;
+  background: transparent url(../images/inactive.svg) center no-repeat;
   border: none;
   cursor: pointer;
   transition: 0.7s;

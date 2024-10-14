@@ -35,6 +35,7 @@ const cardModalCloseButton = addCardModal.querySelector('.modal__close-button');
 
 const cardListEl = document.querySelector('.cards__list');
 const cardTemplate = document.querySelector('#card-template').content.firstElementChild;
+const likeButtons = document.querySelectorAll('.card__like-button');
 
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
