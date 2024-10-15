@@ -34,6 +34,12 @@ const cardModalCloseButton = addCardModal.querySelector('.modal__close-button');
 const cardListEl = document.querySelector('.cards__list');
 const cardTemplate = document.querySelector('#card-template').content.firstElementChild;
 
+// Elements for the preview modal
+const previewModal = document.querySelector('#preview-modal');
+const previewImage = document.querySelector('#modal-image');
+const previewTitle = previewModal.querySelector('.modal__text');
+const previewModalCloseButton = previewModal.querySelector('.modal__close-button');
+
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
 /* -------------------------------------------------------------------------- */
@@ -69,6 +75,14 @@ function getCardEl(cardData) {
   // Trash button event listener
   trashButton.addEventListener('click', () => {
     cardEl.remove();
+  });
+
+  // Image click event listener to open preview modal
+  imageEl.addEventListener('click', () => {
+    previewImage.src = cardData.link; // Set the image in the preview modal
+    previewImage.alt = cardData.name; // Set the alt text in the preview modal
+    previewTitle.textContent = cardData.name; // Set the title in the preview modal
+    openPopUp(previewModal); // Open the preview modal
   });
 
   return cardEl;
@@ -122,6 +136,9 @@ profileEditForm.addEventListener('submit', handleProfileEditSubmit);
 addCardButton.addEventListener('click', () => openPopUp(addCardModal));
 cardModalCloseButton.addEventListener('click', () => closePopUp(addCardModal));
 addCardForm.addEventListener('submit', handleAddCardSubmit);
+
+// Close preview modal
+previewModalCloseButton.addEventListener('click', () => closePopUp(previewModal));
 
 /* -------------------------------------------------------------------------- */
 /*                              CARD RENDERING                                */

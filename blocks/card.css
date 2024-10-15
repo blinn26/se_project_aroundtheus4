@@ -61,14 +61,19 @@
 
 .card__trash-button {
   background: transparent url(../images/Trash.svg) center no-repeat;
+  /* Ensure path is correct */
   position: absolute;
   border: none;
   transition: 0.8s;
   top: 10px;
-  /* Adjust this as needed */
+  /* Adjust as needed */
   right: 10px;
-  /* Adjust this as needed */
+  /* Adjust as needed */
   cursor: pointer;
+  width: 24px;
+  /* Explicitly set width */
+  height: 24px;
+  /* Explicitly set height */
 }
 
 .card__trash-button:hover {
