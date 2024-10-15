@@ -57,3 +57,19 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.card__trash-button {
+  background: center no-repeat;
+  position: absolute;
+  border: none;
+  transition: 0.8s;
+  top: 70px;
+  right: 16px;
+  cursor: pointer;
+}
+
+
+
+.card__trash-button :hover {
+  opacity: 0.5;
+}
