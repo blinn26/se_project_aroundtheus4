@@ -37,7 +37,8 @@ const cardTemplate = document.querySelector('#card-template').content.firstEleme
 // Elements for the preview modal
 const previewModal = document.querySelector('#preview-modal');
 const previewImage = document.querySelector('#modal-image');
-const previewTitle = previewModal.querySelector('.modal__text');
+const previewTitle = document.querySelector('#modal-text'); // Updated selector for the text
+
 const previewModalCloseButton = previewModal.querySelector('.modal__close-button');
 
 /* -------------------------------------------------------------------------- */
