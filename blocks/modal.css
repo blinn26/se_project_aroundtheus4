@@ -150,16 +150,23 @@
 
 .modal__image {
   max-width: 100%;
-  object-fit: cover
-    /*  margin: 0 auto; */
+  object-fit: cover;
+  margin: auto;
+  width: 816px;
+  height: 540px;
 
 }
 
 .modal__text {
-  font-size: 18px;
-  color: black;
-  margin-top: 10px;
-  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  /* top: calc(100% + 15px); */
+  position: absolute;
+  line-height: 14.52px;
+  margin: 0;
 }
 
 @media screen and (max-width: 620px) {
@@ -247,6 +254,11 @@
     /* grid-gap: 10px;
         /* margin-top: 75px;  */
     margin-top: 62px;
+
+  }
+
+  .modal__text {
+    top: calc(100% + 15px);
 
   }
 
