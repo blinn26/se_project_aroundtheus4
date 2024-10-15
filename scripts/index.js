@@ -35,7 +35,6 @@ const cardModalCloseButton = addCardModal.querySelector('.modal__close-button');
 
 const cardListEl = document.querySelector('.cards__list');
 const cardTemplate = document.querySelector('#card-template').content.firstElementChild;
-const likeButtons = document.querySelectorAll('.card__like-button');
 
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
@@ -52,6 +51,12 @@ function getCardEl(cardData) {
   const cardEl = cardTemplate.cloneNode(true);
   const imageEl = cardEl.querySelector('.card__image');
   const titleEl = cardEl.querySelector('.card__title');
+  const likeButton = cardEl.querySelector('.card__like-button');
+  likeButton.addEventListener('click', () => {
+    likeButton.classList.toggle('card__like-button_active');
+    console.log('click');
+  });
+
   titleEl.textContent = cardData.name;
   imageEl.src = cardData.link;
   imageEl.alt = cardData.name;
